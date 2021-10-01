@@ -1,7 +1,21 @@
-puts "Стоимость 1 доллара"
-dol = gets.chomp
+puts "Что меняем меняем?
+1.Рубли
+2.Доллары"
+exchange = gets.chomp
+if exchange == "1"
+    puts "Стоимость 1 доллара"
+    dol = gets.chomp
+    puts "Сколько перевести в рублях?"
+    rub = gets.chomp
+    resultDollar = rub.to_f / dol.to_f
+    puts "У вас #{resultDollar.round(2)} долларов" #вывод результата с оркгулением до двух знаков round(2) 
+end
 
-puts "Сколько перевести в рублях?"
-rub = gets.chomp
-resultDollar = rub.to_f / dol.to_f
-puts "У вас #{resultDollar.round(2)} долларов" #вывод результата с оркгулением до двух знаков round(2) 
+if exchange == "2"
+    puts "Стоимость 1 доллара"
+    dol = gets.chomp
+    puts "Сколько перевести в долларах?"
+    rub = gets.chomp
+    resultDollar = rub.to_f * dol.to_f
+    puts "У вас #{resultDollar.round(2)} рублей" #вывод результата с оркгулением до двух знаков round(2) 
+end
