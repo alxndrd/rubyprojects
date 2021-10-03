@@ -2,7 +2,7 @@ puts "Ты планируешь поход в `Красное и белое`, ч
 1.Попить
 2.Поесть"
 choice = gets.chomp
-if choice == "1"
+if choice == "1"#выбор напитков
     puts "Введи желаемый градус напитка"
     alc = gets.chomp
     if alc == "0" 
@@ -10,21 +10,17 @@ if choice == "1"
     elsif alc.to_i > 40 
     puts "Подходящего напитка нет в наличии"
     end
-    case alc.to_i
+    case alc.to_i #выбирается напиток в соответствующем диапазоне
     when 1...10 then puts "Тебе подойдет пиво"
     when 10...19 then puts "Тебе подойдет вино"
     when 19...36 then puts "Тебе подойдет настойка"
     when 36...41 then puts "Бери водку :)"
     end
 end
-# if choice == "2" #выбор еды
-#     puts "Введи желаемый градус напитка"
-#     alc = gets.chomp
-#     case alc.to_i
-#     when alc.to_i then puts "Тебе подойдет сок"
-#     when 1...9 then puts "Тебе подойдет пиво"
-#     when 10...18 then puts "Тебе подойдет вино"
-#     when 19...35 then puts "Тебе подойдет настойка"
-#     else puts "Бери водку :)"
-#     end
-# end
+if choice == "2" #выбор еды
+    puts "Выбирай...
+    1.Мясо
+    2.Рыба
+    3.Сыр
+    4.Снэки"
+end
