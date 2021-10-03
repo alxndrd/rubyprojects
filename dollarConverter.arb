@@ -19,3 +19,4 @@ if exchange == "2"
     resultDollar = rub.to_f * dol.to_f
     puts "У вас #{resultDollar.round(2)} рублей" #вывод результата с оркгулением до двух знаков round(2) 
 end
+ 
