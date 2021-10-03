@@ -1,4 +1,4 @@
-num = 5
+num = 2
 puts "Угадай число от 0 до 10"
 
 #ввода ответа 1 попытка
@@ -74,21 +74,7 @@ if answer.to_i == num
     puts "Правильно"
     exit
 end
-
- if (answer.to_i - num.to_i).abs >= 3
-      "#{print "Холодно "}" + 
-      " #{if answer.to_i > num.to_i #проверка нужно больше или меньше
-            puts "(Нужно меньше) "
-        else 
-            puts "(Нужно больше) "
-        end}"
- elsif (answer.to_i - num.to_i).abs <= 2
-    "#{print "Тепло "}" + 
-      " #{if answer.to_i > num.to_i
-            puts "(Нужно меньше) "
-        else 
-            puts "(Нужно больше) "
-        end}"
-    end 
-puts "Число не было угадано, правильный ответ #{num.to_s}"
+ if answer.to_i.abs != num.to_s
+    puts "Число не было угадано, правильный ответ #{num.to_s}"
+ end
 exit
