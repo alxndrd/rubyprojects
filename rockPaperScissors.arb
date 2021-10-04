@@ -1,0 +1,37 @@
+# введите вариант: 0 - камень, 1 - ножницы, 2 - бумага
+#   2
+#   Вы выбрали: Бумага
+#   Компьютер выбрал: Ножницы
+#   Победил Компьютер
+
+dif = ["Камень", "Ножницы", "Бумага"]
+
+puts "Выберите ваше оружие: 
+0 - Камень
+1 - Ножницы
+2 - Бумага"
+
+user = gets.to_i 
+puts "Ваш выбор: #{dif[user]}" 
+computer = rand(dif.size)
+puts "Выбор компьютера: #{dif[computer]}" 
+#class
+# puts person.class 
+# puts computer.class
+
+if user == computer
+    puts "Ничья"
+elsif user == 0 && computer == 1
+    puts "Вы выиграли"
+elsif user == 1 && computer == 2
+    puts "Вы выиграли"
+elsif user == 2 && computer == 0
+    puts "Вы выиграли"
+else 
+    puts "Компьютер выиграл"
+end
+
+
+
+
+
